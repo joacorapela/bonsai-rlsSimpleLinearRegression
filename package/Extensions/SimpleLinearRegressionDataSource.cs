@@ -7,6 +7,7 @@ using System.Reactive.Linq;
 using MathNet.Numerics.LinearAlgebra;
 using MathNet.Numerics.Random;
 using MathNet.Numerics.Distributions;
+using Bonsai.ML.RecursiveLeastSquares;
 
 [Combinator]
 [Description("")]
