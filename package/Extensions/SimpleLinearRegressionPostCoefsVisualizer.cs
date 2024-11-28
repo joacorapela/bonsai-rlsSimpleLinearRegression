@@ -14,6 +14,7 @@ using MathNet.Numerics.Distributions;
 using MathNet.Numerics.Random;
 using ScottPlot;
 using ScottPlot.Plottable;
+using JoacoRapela.Bonsai.ML.RecursiveLeastSquares;
 
 [assembly: TypeVisualizer(typeof(SimpleLinearRegressionPostCoefsVisualizer), Target=typeof(RLSestimator))] 
 
