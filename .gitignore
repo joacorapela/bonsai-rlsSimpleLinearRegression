@@ -1,6 +1,9 @@
 *~
+NuGet.Config
 
 obj/
 bin/
-NuGet.Config
 .vs/
+.bonsai/*
+!.bonsai/Bonsai.config
+!.bonsai/Setup.*
