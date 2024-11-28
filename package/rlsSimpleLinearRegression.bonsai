@@ -3,6 +3,7 @@
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns:p1="clr-namespace:;assembly=Extensions"
+                 xmlns:p2="clr-namespace:JoacoRapela.Bonsai.ML.RecursiveLeastSquares;assembly=JoacoRapela.Bonsai.ML.RecursiveLeastSquares"
                  xmlns="https://bonsai-rx.org/2018/workflow">
   <Workflow>
     <Nodes>
@@ -14,7 +15,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="p1:SimpleLinearRegressionDataSource">
-          <p1:a0>0</p1:a0>
+          <p1:a0>-0.9</p1:a0>
           <p1:a1>-0.9</p1:a1>
           <p1:sigma>0.1</p1:sigma>
         </Combinator>
@@ -26,13 +27,13 @@
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="p1:RLSestimator">
-          <p1:w0>
-            <p1:double>0</p1:double>
-            <p1:double>0</p1:double>
-          </p1:w0>
-          <p1:S0>1,0;0,1</p1:S0>
-          <p1:lambda>0.9</p1:lambda>
+        <Combinator xsi:type="p2:RLSestimator">
+          <p2:w0>
+            <p2:double>0</p2:double>
+            <p2:double>0</p2:double>
+          </p2:w0>
+          <p2:S0>1,0;0,1</p2:S0>
+          <p2:lambda>0.9</p2:lambda>
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
