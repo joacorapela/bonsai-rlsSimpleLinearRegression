@@ -1,4 +1,4 @@
-# Bonsai recursive least squares simple linear regression package
+# Bonsai recursive least squares simple linear regression demo
 
 ![workflow](figures/workflow.png)
 
