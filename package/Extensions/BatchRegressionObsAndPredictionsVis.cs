@@ -14,6 +14,7 @@ using MathNet.Numerics.Distributions;
 using MathNet.Numerics.Random;
 using ScottPlot;
 using ScottPlot.Plottable;
+using JoacoRapela.Bonsai.ML.RecursiveLeastSquares;
 
 [assembly: TypeVisualizer(typeof(BatchRegressionObsAndPredictionsVisualizer), Target=typeof(Tuple<IList<RegressionObservation>, RLSdataItem>))] 
 
@@ -66,7 +67,7 @@ public class BatchRegressionObsAndPredictionsVisualizer : DialogTypeVisualizer
         {
             double[] aux = {1.0, xDense[i]};
             Vector<double> u = Vector<double>.Build.DenseOfArray(aux);
-            mean[i] = RecursiveLeastSquares.Predict(rlsDI.w, u);
+            mean[i] = AdaptiveSignalProcessing.RecursiveLeastSquares.Predict(rlsDI.w, u);
         }
 
         // plot means and 95% ci for xDense
